@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="shortcut icon" href="assets/images/32px-Approve_icon.svg.png" type="image/x-icon">
+    
+    <style>
+        #vector{
+            background-image: url(assets/images/login-illustration.png);
+            background-color: turquoise;
+        }
+        input {
+            border: 0;
+        }
+
+        input:active {
+            border-left: 2px; 
+        } 
+        input:focus {
+            outline: none;
+        }
+        input:hover {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" id="sidebar">
+                <!-- logo -->
+                
+                <div class="d-flex flex-column">
+                    <img class="mt-5" width="160" height="51" src="assets/images/logo-kartu-prakerja.png" alt="logo">
+                </div>
+                <!-- login info -->
+                
+                <div class="d-flex flex-column">
+                    <h6 class="mt-5 font-weight-bold">Login</h6>
+                    <p class="lead">Bagi kamu yang sudah terdaftar, silakan login</p>
+                </div>    
+                <!-- login form -->
+                
+                <div class="d-flex flex-column">
+                    <form class="shadow border">
+                        <div>
+                        <small class="font-weight-bold p-3">Email</small>
+                        <input class="col" type="text" placeholder="alamat email">
+                        </div>
+                        <div class="border">
+                        <small class="font-weight-bold p-3">Password</small>
+                        <input class="col" type="password" placeholder="masukkan password"><i class="position-relative far fa-eye-slash ml-n4"></i>
+                        </div>
+                    </form>   
+                </div>
+                <!-- login additional -->
+                
+                <div class="d-flex flex-row justify-content-between mt-4">
+                    <form> 
+                        <input type="checkbox"><small class="text-muted ml-2">ingat saya</small>
+                    </form>
+                    <div>
+                        <small><a href="#">Lupa Password?</a></small>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mt-4">
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-outline-primary ml-3" data-toggle="modal" data-target="#exampleModal">Daftar</button>
+                </div>
+                <!-- footer -->
+                
+                <div class="d-flex flex-row fixed-bottom mb-2 ml-2">
+                    <small class="text-muted mb-0">copyright &copy;2020</small>
+                </div>
+            </div>
+            <div class="col-8 vh-100 border" id="vector">
+                <!-- <img src="assets/images/login-illustration.png" class="img-fluid bg-info" alt="images"> -->
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!-- logo -->
+                                
+                                <div class="d-flex flex-column">
+                                    <img class="mt-2" width="100" height="36" src="assets/images/logo-kartu-prakerja.png" alt="logo">
+                                </div>
+                                <!-- daftar info -->
+                                
+                                <div class="d-flex flex-column">
+                                    <h6 class="mt-4 font-weight-bold">Yuk, daftar kartu prakerja</h6>
+                                    <p class="lead">mohon isi data di bawah ini dengan benar</p>
+                                </div>  
+                                <!-- daftar form -->
+                                
+                                <div class="d-flex flex-column mt-3">
+                                    <form class="shadow border">
+                                        <div>
+                                        <small class="font-weight-bold p-2">Alamat Email</small>
+                                        <input class="p-1 col button_click" type="text" placeholder="alamat email">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="d-flex flex-column mt-4">
+                                    <form class="border">
+                                        <div>
+                                        <small class="font-weight-bold p-2">Password</small>
+                                        <input class="p-1 col button_click" type="password" placeholder="gunakan 6 karakter atau lebih"><i class="position-relative far fa-eye-slash ml-n4"></i>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="d-flex flex-column mt-0">
+                                    <form class="shadow border">
+                                        <div>
+                                        <small class="font-weight-bold p-2">Konfirmasi Password</small>
+                                        <input class="p-1 col button_click" type="password" placeholder="konfirmasikan ulang password"><i class="position-relative far fa-eye-slash ml-n4"></i>
+                                        </div>
+                                    </form>   
+                                </div>
+                                <!-- login additional -->
+                                
+                                <div class="d-flex flex-row mt-5">
+                                    <form> 
+                                        <input type="checkbox">
+                                    </form>
+                                    <small class="text-muted ml-2">saya menyetujui <a href="#">syarat dan ketentuan</a> dan <a href="#">kebijakan privasi</a> yang berlaku</small>
+                                </div>
+                                <div class="d-flex flex-row mt-4">
+                                    <button type="button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#exampleModal">Daftar</button>
+                                </div> 
+                                <div class="d-flex flex-row mt-3">
+                                   <small class="text-muted">sudah daftar? <a href="#">login</a></small>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>   
+        
+        
+        
+        <script src="assets/JS/jquery-3.5.1.slim.full.js"></script>
+        <script src="assets/JS/popper.min.js"></script>
+        <script src="assets/JS/bootstrap.min.js"></script>
+        <script>
+            $(".button_click").click(function(el){
+                root_el=this.parentNode.parentNode.parentNode;
+               root_el.style="border-left:2px solid red";
+            });
+
+            $(".button_click").focusout(function(el){
+                root_el=this.parentNode.parentNode.parentNode;
+               root_el.style="border-left:0";
+            });
+        </script>
+    </body>
+    </html>
